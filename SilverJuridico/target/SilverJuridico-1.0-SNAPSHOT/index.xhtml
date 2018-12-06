@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:r="http://richfaces.org/a4j">
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Juridico</title>
+        <link rel="stylesheet" href="resources/bootstrap337/css/bootstrap.css"/>
+        <link rel="stylesheet" href="resources/css/sweetalert.css"/>
+        <link rel="stylesheet" href="resources/css/animate.css"/>
+        <script type='text/javascript' src="resources/js/jquery-latest.js"></script>
+        <script type='text/javascript' src="resources/bootstrap337/js/bootstrap.js"></script>
+        <script type='text/javascript' src="resources/js/spring.js"></script>
+        <script type='text/javascript' src="resources/js/sweetalert.min.js"></script>
+    </h:head>
+    <h:body>
+        <div class="jumbotron text-center">
+            <h1></h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <form>       
+                    <div class="form-group">
+                        <label for="tipoOr">Tipo de ordenamiento:</label>
+                        <select class="form-control" id="tipoOr">
+                            <option value="0">- Seleccionar -</option>
+                            <option value="1">Constitución</option>
+                            <option value="2">Códigos</option>
+                            <option value="3">Leyes orgánicas</option>
+                            <option value="4">Leyes ordinarias</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="noOrdenamiento">No. de ordenamiento:</label>
+                        <select class="form-control" name="noOrdenamiento" id="select4" style="display: none" >
+                            <c:forEach  items="${juridicoCntrl.listarMarcoJuridico}" var="co">
+                              
+                            </c:forEach>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </h:body>
+</html>

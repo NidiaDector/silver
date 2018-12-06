@@ -1,0 +1,7 @@
+com\segob\silverjuridico\model\Ultima_reforma.class
+com\segob\silverjuridico\model\Marco_juridico.class
+com\segob\silverjuridico\servicio\Juridico.class
+com\segob\silverjuridico\controlador\JuridicoController.class
+com\segob\silverjuridico\model\Decretos.class
+com\segob\silverjuridico\utils\HibernateUtil.class
+com\segob\silverjuridico\servicio\JuridicoImpl.class

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.segob.silverjuridico.model.Marco_juridico" table="marco_juridico" catalog="juridico" optimistic-lock="version">
+        <id name="id_marco_juridico" type="int">
+            <column name="id_marco_juridico" />
+            <generator class="identity" />
+        </id>
+        <property name="numero" type="int">
+            <column name="numero" />
+        </property>
+        <property name="advervio" type="string">
+            <column name="advervio" length="11" not-null="true" />
+        </property>
+        <property name="titulo" type="string">
+            <column name="titulo" length="65535" />
+        </property>
+        <property name="tipo" type="int">
+            <column name="tipo" not-null="true">
+                <comment>1=constitucion, 2=codigo, 3=ley_organica, 4=ley_ordinaria</comment>
+            </column>
+        </property>
+        
+        <property name="ultima_reforma" type="string">
+            <column name="ultima_reforma" length="65535" not-null="true" />
+        </property>
+        <property name="publicacion_original" type="string">
+            <column name="publicacion_original" length="65535" />
+        </property>
+        <property name="texto_vigente" type="string">
+            <column name="texto_vigente" length="65535" />
+        </property>
+        <property name="libro_virtual" type="string">
+            <column name="libro_virtual" length="65535" />
+        </property>
+        <property name="ficha" type="string">
+            <column name="ficha" length="65535" not-null="true" />
+        </property>
+        <property name="acuerdo" type="string">
+            <column name="acuerdo" length="65535" not-null="true" />
+        </property>
+        <property name="actas" type="string">
+            <column name="actas" length="65535" not-null="true" />
+        </property>
+        <property name="iniciativa" type="string">
+            <column name="iniciativa" length="65535" not-null="true" />
+        </property>
+        <property name="dictamen" type="string">
+            <column name="dictamen" length="65535" not-null="true" />
+        </property>
+        <property name="debate" type="string">
+            <column name="debate" length="65535" not-null="true" />
+        </property>
+        <property name="votacion" type="string">
+            <column name="votacion" length="65535" not-null="true" />
+        </property>
+        <property name="decretos" type="string">
+            <column name="decretos" length="65535" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

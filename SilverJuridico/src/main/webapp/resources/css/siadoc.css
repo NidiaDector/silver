@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: "NeoSans";
+    src: url(fuentes/neo_sans.ttf) format("truetype");
+}
+
+
+body,html
+{
+  height: 100%;
+  font-family: "NeoSans";
+  font-size:12px;
+  text-decoration:none;
+}
+.text_general
+{
+    font-family: "NeoSans";
+    font-size:25px;
+    text-decoration:none;
+}
+
+.titsis
+{
+    font-family: "NeoSans";
+    font-size:25px;
+    text-decoration:none;
+    color: white;
+}
+
+.text_btn
+{
+    font-family: "NeoSans";
+    font-size:16px;
+    text-decoration:none;
+    letter-spacing: 3px;
+}
+
+.text_btnlg
+{
+    font-family: "NeoSans";
+    font-size:20px;
+    text-decoration:none;
+    letter-spacing: 3px;
+}
+
+.text_btnxs
+{
+    font-family: "NeoSans";
+    font-size:12px;
+    text-decoration:none;
+    letter-spacing: 3px;
+}
+
+.text_btnsm
+{
+    font-family: "NeoSans";
+    font-size:14px;
+    text-decoration:none;
+    letter-spacing: 1px;
+}
+.det_tabla
+{
+   font-family: "NeoSans";
+    font-size:10px;
+    text-decoration:none; 
+}
+
+.link
+{
+  text-decoration: none;
+}
+
+.link:hover
+{
+  text-decoration: none;
+}
+
+.link:visited
+{
+  text-decoration: none;
+}
+
